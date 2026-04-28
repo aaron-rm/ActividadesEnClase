@@ -38,5 +38,6 @@ public class Problema3 {
                 System.out.println("A");
             }
         }
+        sc.close();
     }
 }

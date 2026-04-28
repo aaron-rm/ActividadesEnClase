@@ -26,6 +26,7 @@ public class Notificacion {
             System.out.println("Recibida");
         }
     }
+    
     public void enviar(){
         estado = 2;
         System.out.println("Enviando notificacion...");

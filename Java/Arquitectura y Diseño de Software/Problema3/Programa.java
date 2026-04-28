@@ -24,5 +24,6 @@ public class Programa {
     public void getInfoPrograma() {
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Version: " + this.version);
+        System.out.println("Estado: " + this.estado);
     }
 }

@@ -19,5 +19,6 @@ public class Problema2 {
             //salida
             System.err.println("Acceso Denegado");
         }
+        sc.close();
     }
 }

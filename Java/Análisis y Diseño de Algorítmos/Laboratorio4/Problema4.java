@@ -41,5 +41,6 @@ public class Problema4 {
             }
             default: System.err.println("Error, eliga una opción correcta");
         }
+        sc.close();
     }
 }

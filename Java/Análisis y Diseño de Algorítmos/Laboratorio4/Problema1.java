@@ -16,5 +16,6 @@ public class Problema1 {
             //salida
             System.out.println("Tarea Completada");
         }
+        sc.close();
     }
 }
