@@ -1,3 +1,4 @@
+package Problema3;
 
 public class Programa {
     private String nombre;

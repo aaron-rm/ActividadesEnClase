@@ -36,13 +36,13 @@ public class Proyecto1ERD {
             opcion = leerEntero();
 
             switch (opcion) {
-                case 1 -> agregarLibro();
-                case 2 -> buscarLibro();
-                case 3 -> listarLibros();
-                case 4 -> filtrarLibros();
-                case 5 -> editarLibro();
-                case 0 -> System.out.println("¡Hasta luego!");
-                default -> System.out.println("Opción inválida.");
+                case 1: agregarLibro();
+                case 2: buscarLibro();
+                case 3: listarLibros();
+                case 4: filtrarLibros();
+                case 5: editarLibro();
+                case 0: System.out.println("¡Hasta luego!");
+                default: System.out.println("Opción inválida.");
             }
         } while (opcion != 0);
     }
