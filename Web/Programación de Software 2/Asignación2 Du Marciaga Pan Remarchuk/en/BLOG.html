@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html style="background-color: #D9FFEA; font-family: Verdana, Geneva, Tahoma, sans-serif;" lang="es">
+    <!--Elegimos un fondo diferente a blanco, escogemos la fuente del contenido-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Salud Vital | EN</title>
+        <link rel="icon" href="../logo.png"> <!--pone el ícono de la página-->
+    </head>
+    <body style="margin: 0; color: #000000;">
+        <!--margin:0 quita el margen automatico de las páginas, color: #000000 pone la fuente en color negro de forma predeterminada-->
+        <header style="background-color: #2d6a4f; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #ffffff; text-align: center;">
+            <h1 style="padding: 40px; margin: 0;">Salud Vital</h1> <!--padding agrega separación entre el bloque y el texto-->
+        </header>
+
+        <nav style="display: flex; justify-content: center; background-color: #1b4332;">
+            <!--display:flex nos permite aplicar atributos de bloque y línea-->
+            <!--justify-content, se usa con display:flex, para centrar los elementos del display-->
+            <ul style="list-style: none; padding: 10px 20px; margin: 0;">
+                                        <!--padding 10(arriba y abajo) 20(izquierda y derecha)-->
+                <li style="display: inline; margin: 0 10px"> <!--diplay: inline, los coloca en la misma línea-->
+                                    <!--margin 0(arriba y abajo) y 10(izquierda y derecha) para separar un poco-->
+                    <a href="HOME.html" style="text-decoration: none; color: #ffffff; font-weight: bold">Home</a>
+                </li>                      <!--text-decoration: none quita el subrayado-->
+                <li style="display: inline; margin: 0 10px">
+                    <a href="BLOG.html" style="text-decoration: none; color: #ffffff; font-weight: bold">Blog</a>
+                </li>
+                <li style="display: inline; margin: 0 10px">
+                    <a href="REGISTRO.html" style="text-decoration: none; color: #ffffff; font-weight: bold;">Sign Up</a>
+                </li>
+                <li style="display: inline; margin: 0 10px">
+                    <a href="CONTACTO.html" style="text-decoration: none; color: #ffffff; font-weight: bold">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CONTENEDOR PRINCIPAL DEL BLOG -->
+        <!-- Se usa fondo blanco para resaltar contenido -->
+        <section style="background-image:url(../Omelette.jpg); padding: 45px;">
+            <article style="background-color: #ffffff; border: 3px solid orange; padding: 15px; margin: 20px auto; border-radius: 10px; max-width: 600px; text-align: center;">
+                <!-- TITULO DE LA RECETA -->
+                <h2>Healthy omelet</h2>
+
+                <!-- DESCRIPCION -->
+                <p>
+                    This healthy omelet is an excellent choice for a nutritious breakfast.
+                    It contains protein, vitamins, and healthy fats that help maintain good energy 
+                    throughout the day.
+                </p>
+
+                <!-- IMAGEN DE LA RECETA -->
+                <img src="../Omelette.jpg" alt="Healthy omelet" style="width: 50%;">
+            </article>
+            <!-- LISTA DE INGREDIENTES -->
+            <article style="background-color: #ffffff; border: 3px solid orange; padding: 15px; margin: 20px auto; border-radius: 10px; max-width: 600px; text-align: center;">
+                <h3>Ingredients</h3>
+                <section style="list-style-position: inside; padding: 0; text-align: center;">
+                <ul>
+                    <li>2 eggs</li>
+                    <li>Spinach</li>
+                    <li>Tomato</li>
+                    <li>Low-fat cheese</li>
+                    <li>Salt to taste</li>
+                </ul>
+                </section>
+            </article>
+            <article style="background-color: #ffffff; border: 3px solid orange; padding: 15px; margin: 20px auto; border-radius: 10px; max-width: 600px; text-align: center;">
+                <!-- PASOS DE PREPARACION -->
+                <h3>Preparation</h3>
+                <section style="list-style-position: inside; padding: 0; text-align: center;">
+                    <ol>
+                        <li>Beat the eggs in a bowl.</li>
+                        <li>Add salt and mix well.</li>
+                        <li>Pour into a hot skillet.</li>
+                        <li>Add the toppings (spinach, tomato, cheese).</li>
+                        <li>Cook until cooked through.</li>
+                    </ol>
+                </section>
+            </article>
+            <article style="background-color: #ffffff; border: 3px solid orange; padding: 15px; margin: 20px auto; border-radius: 10px; max-width: 600px; text-align: center;">
+                <!-- TABLA NUTRICIONAL -->
+                <h3>Nutritional Information</h3>
+                <table border="1">
+                    <tr>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Fat</th>
+                        <th>Carbohydrates</th>
+                    </tr>
+                    <tr>
+                        <td>250 kcal</td>
+                        <td>18 g</td>
+                        <td>15 g</td>
+                        <td>5 g</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <footer style="background-color: #343a40; color: #ffffff; padding: 30px; text-align: center;">
+            <div style="font-weight: bold;">
+                <a href="https://www.tiendanube.com/blog/faq/" target="_blank" style="color: #ffffff; text-decoration: none;">Frequently Asked Questions</a> |
+                <a href="https://www.wonder.legal/mx/modele/aviso-privacidad?msockid=0f2ea327c6bc602a1e06b41ec7c26136" target="_blank" style="color: #ffffff; text-decoration: none;">Privacy</a> | <!-- target="_blank" abre el enlace en una página nueva-->
+                <a href="https://consortiumlegal.com/2025/09/02/registro-de-terminos-de-uso-comun-genericos-y-o-descriptivos-en-latinoamerica/" target="_blank" style="color: #ffffff; text-decoration: none;">Terms of Use</a>
+            </div>
+            <div>
+                <br>
+                <label for="lang">Language:</label>
+                <select id="lang" onchange="window.location.href=this.value;"><!--onchange, permite realizar "algo" al detectar un cambio-->
+                    <option value="../BLOG.html">Spanish</option>
+                    <option value="BLOG.html" selected>English</option>
+                </select>
+            </div>
+            <br>
+            <div style="color: #D9FFEA;">
+                    <span style="font-weight: bold;">Group formed by:</span><br>
+                    Yongsheng Du <br> Kevin Marciaga <br> Kevin Pan <br> Aaron Remarchuk <br>
+            </div>
+        </footer>
+    </body>
+</html>
