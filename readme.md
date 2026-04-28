@@ -2,7 +2,7 @@
 
 
 ## 🛠️ Competencias Técnicas
-* **Lenguajes:** Java
+* **Lenguajes:** Java, HTML, Python, C++, C
 * **Lógica:** Diseño de algoritmos, manejo de arreglos de registros y validación de entradas.
 * **Arquitectura:** Modelado de relaciones entre clases (agregación, composición y dependencia).
 
