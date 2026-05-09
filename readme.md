@@ -29,7 +29,7 @@ El contenido está organizado por lenguajes de programación y áreas de estudio
 ## 🏛️ Institución
 * **Universidad:** Universidad Tecnológica de Panamá (UTP)
 * **Facultad:** Ingeniería de Sistemas Computacionales
-* **Periodo Académico:** 2025
+* **Periodo Académico:** 2024-...
 
 ---
 *Este repositorio es un reflejo de mi aprendizaje continuo en el área de desarrollo de software y ciencias de la computación.*
