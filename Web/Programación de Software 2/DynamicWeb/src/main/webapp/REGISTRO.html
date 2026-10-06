@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Registro | Práctica 1</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/form.css">
+    </head>
+    <body>
+        <header>
+            <h1>Formulario de Registro</h1>
+        </header>
+        <main>
+            <form action="RESPUESTA.jsp">
+                <fieldset class="personal">
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+                    <br>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+                    <br>
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" id="contrasenia" name="contrasenia" placeholder="Ingrese su contraseña">
+                </fieldset>
+                <fieldset class="provincias">
+                    <legend>Provincias</legend>
+                    <select name="provincia" id="provincia">
+                        <option value="Bocas del Toro">Bocas del Toro</option>
+                        <option value="Coclé">Coclé</option>
+                        <option value="Colón">Colón</option>
+                        <option value="Chiriquí">Chiriquí</option>
+                        <option value="Darién">Darién</option>
+                        <option value="Herrera">Herrera</option>
+                        <option value="Los Santos">Los Santos</option>
+                        <option value="Panamá" selected>Panamá</option>
+                        <option value="Veraguas">Veraguas</option>
+                        <option value="Panamá Oeste">Panamá Oeste</option>
+                    </select>
+                </fieldset>
+                <fieldset class="herramientas">
+                    <legend>Herramientas</legend>
+                    <input type="checkbox" id="MS Word" name="herramientas" value="MS Word">
+                    <label for="MS Word">MS Word</label>
+                    <input type="checkbox" id="MS Excel" name="herramientas" value="MS Excel">
+                    <label for="MS Excel">MS Excel</label>
+                    <input type="checkbox" id="MS PowerPoint" name="herramientas" value="MS PowerPoint">
+                    <label for="MS PowerPoint">MS PowerPoint</label>
+                    <input type="checkbox" id="Photoshop" name="herramientas" value="Photoshop">
+                    <label for="Photoshop">Photoshop</label>
+                    <input type="checkbox" id="MS Movie Maker" name="herramientas" value="MS Movie Maker">
+                    <label for="MS Movie Maker">MS Movie Maker</label>
+                    <input type="checkbox" id="InkScape" name="herramientas" value="InkScape">
+                    <label for="InkScape">InkScape</label>
+                    <input type="checkbox" id="Blender" name="herramientas" value="Blender">
+                    <label for="Blender">Blender</label>
+                    <input type="checkbox" id="WireShark" name="herramientas" value="WireShark">
+                    <label for="WireShark">WireShark</label>
+                </fieldset>
+                <input type="reset" value="Reiniciar">
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer>
+            <a href="HOME.html">Volver</a>
+        </footer>
+    </body>
+</html>

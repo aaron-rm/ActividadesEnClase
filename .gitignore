@@ -1,0 +1,5 @@
+# Cachés y entornos locales de Python.
+__pycache__/
+*.py[cod]
+.venv/
+venv/

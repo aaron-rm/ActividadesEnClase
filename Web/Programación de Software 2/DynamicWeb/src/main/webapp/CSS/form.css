@@ -1,0 +1,42 @@
+form {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 70%;
+}
+
+fieldset {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.personal label {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.personal input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.personal input:hover {
+    border-color: #0048ff;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+select:hover {
+    border-color: #0048ff;
+}

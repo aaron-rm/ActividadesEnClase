@@ -1,0 +1,404 @@
+/* Estilos básicos para el diseño */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: aliceblue;
+}
+        
+/* Links */
+a { /* estilo para los links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover { /* estilo para los links al pasar el mouse */
+    color: #757575;
+}
+
+/* Header y Logo */
+.site-header {
+    width: 100%;
+    background-color: #003366; /* Color institucional */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header-content {
+    gap: 20px; /* Espacio entre logo y nombre */
+    width: 100%;
+    height: 150px;
+    background-color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 100px; 
+    width: auto;
+}
+
+.nombre-universidad {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Contenedor principal */
+.main-container { 
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-height: 400px;
+}
+
+/* Menú lateral */
+.menu-nav { /* estilo para el menú lateral */
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border-right: 1px solid #ddd; 
+    width: 20%;
+}
+
+.menu-nav ul { /* estilo para la lista del menú lateral */
+    list-style: none; 
+    padding: 0; 
+}
+
+.menu-nav ul li { /* estilo para los items de la lista del menú lateral */
+     margin-bottom: 15px; 
+}
+
+.menu-nav ul li a { /* estilo para los links del menú lateral */
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.menu-nav ul li a:hover { /* estilo para los links del menú lateral al pasar el mouse */
+    color: #007bff; 
+}
+
+/* Sección central */
+.home-content { /* estilo para la sección central */
+    width: 80%; 
+    padding: 20px; 
+    text-align: center;
+}
+
+.botones-nav { /* estilo para los botones de navegación */
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.botones-nav a { /* estilo para los enlaces de los botones de navegación */
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Alinea imagen y texto verticalmente */
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.botones-nav a img { /* estilo para las imágenes de los botones de navegación */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto Hover aplicado al enlace completo */
+.botones-nav a:hover { /* Efecto de escala para todo el bloque del enlace */
+    transform: scale(1.05); /* Escala todo el bloque */
+}
+
+.botones-nav a:hover img { /* Efecto de cambio de fondo solo para la imagen al pasar el mouse */
+    background-color: #d1d1d1;
+}
+
+.botones-nav a p { /* estilo para el texto debajo de las imágenes de los botones de navegación */
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Noticias */
+.noticias { /* estilo para la sección de noticias */
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+}
+
+.noticia-item { /* estilo para cada noticia individual */
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #2c3e50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticia-titulo { /* estilo para el título de cada noticia */
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.noticia-desc { /* estilo para la descripción de cada noticia */
+    color: #555;
+    line-height: 1.6;
+}
+
+.noticia-link { /* estilo para el enlace de cada noticia */
+    display: inline-block;
+    margin-top: 5px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Formularios */
+.formulario { /* estilo para el body de las páginas de formulario */
+    background-color: aliceblue;
+    text-align: center;
+}
+
+/* Estilo para el enlace que se muestra en la página de registro de estudiantes */
+.button-link { /* estilo para el enlace que se muestra en la página de registro de estudiantes */
+    display: inline-block;
+    margin: 0 auto;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover { /* estilo para el enlace que se muestra en la página de registro de estudiantes al pasar el mouse */
+    background-color: #0056b3;
+    color: #92c7ff;
+}
+
+/* Estilo general para el contenedor */
+.form-content {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para etiquetas y texto */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo para inputs de texto y select */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+/* Estilo para los botones de radio */
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del botón de enviar */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el mensaje de éxito */
+.registro-exitoso { /* estilo para el mensaje de éxito después de enviar el formulario */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.registro-info { /* estilo para el contenedor de la información del registro exitoso */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.registro-info h1 { /* estilo para el título del mensaje de éxito */
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.registro-info h2 { /* estilo para el subtítulo de la información del registro exitoso */
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.registro-info p { /* estilo para los párrafos de la información del registro exitoso */
+    font-size: 1.1rem;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.registro-info strong { /* estilo para los títulos dentro de los párrafos de la información del registro exitoso */
+    color: #2c3e50;
+    margin-right: 8px;
+}
+
+.registro-volver { /* estilo para el botón de volver al inicio después de un registro exitoso */
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* calendario */
+h2 {
+    text-align: center;
+}
+.calendar-grid { /* estilo para el calendario */
+    text-align: center;
+    margin: 0 5%;
+    margin-bottom: 10%;
+    display: grid; 
+    grid-template-columns: 
+    repeat(7, 1fr); 
+    gap: 10px; 
+}
+
+.day-box { /* estilo para cada día del calendario */
+    text-align: right;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    min-height: 100px; 
+    background: #f9f9f9; 
+}
+
+.activity { /* estilo para las actividades dentro de cada día del calendario */
+    text-align: center;
+    font-size: 0.8em; 
+    background: #e1f5fe; 
+    margin-top: 10px; 
+    padding: 2px; 
+    border-radius: 3px; 
+    color: #0277bd;
+}
+
+.activity:hover { /* estilo para las actividades al pasar el mouse */
+    background-color: #b3e5fc;
+    color: #003d61;
+    cursor: pointer;
+}
+
+/* Footer */
+footer { /* estilo para el footer */
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    margin-top: auto;
+}
+
+footer nav ul { /* estilo para la lista de navegación del footer */
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li { /* estilo para los items de la lista del footer */
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a { /* estilo para los links del footer */
+    text-decoration: none;
+    color: beige;
+}
+
+.copyright { /* estilo para el copyright del footer */
+    margin-top: 10px;
+    color: beige;
+}
+
+/* Pagina de soporte */
+.body-soporte { /* body de la pagina */
+    background-color: aliceblue;
+}
+
+.h1-soporte { /* titulo de la pagina */
+    text-align: center;
+}
+
+.soporte-container { /* contenedor principal */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin: 5% 0;
+}
+
+.integrante-card { /* tarjeta para cada integrante */
+    background: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    width: 250px; 
+    text-align: center;
+}
+
+.integrante-card:hover { /* animacion de la tarjeta*/
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.integrante-card img { /* imagen de cada tarjeta */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}

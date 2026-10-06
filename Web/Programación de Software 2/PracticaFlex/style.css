@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: gray;
+    border: 3px dotted green;
+}
+
+main {
+    background-color: blanchedalmond;
+    min-height: 100vh;
+    border: 3px dotted red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+    border: 3px dotted blue;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(54, 137, 165);
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px blue;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: url(https://www.guatevision.com/wp-content/uploads/sites/2/2017/08/pizza.jpg?resize=300) center/cover;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    box-shadow: 0 0 10px #000000;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #000000;
+}
+
+.card span {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+}

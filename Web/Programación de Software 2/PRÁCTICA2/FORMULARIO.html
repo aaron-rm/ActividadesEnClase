@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title> Formulario </title>
+</head>
+
+<body style="background-color: rgb(203, 240, 253); font-size: large; margin-left: 100px; margin-right: 100px; font-family: Arial, Helvetica, sans-serif;"> 
+    <header style="text-align: center;"> <h1> Formulario de Registro </h1>  </header>
+    <p> Bienvenido al formulario de registro para nuestro restaurante: </p>
+
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <table>
+                <tr>
+                    <td> <label for="name">Nombre:</label> </td>
+                    <td> <input name="name" type="text"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="lname">Apellido: </label> </td>
+                    <td> <input name="lname" type="text"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="id">Cédula:</label> </td>
+                    <td> <input type="text" name="id" placeholder="00-0000-0000"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="bday">Fecha de Nacimiento:</label> </td>
+                    <td> <input type="date"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="nacLugar">Lugar de Nacimiento:</label> </td>
+                    <td> 
+                        <select name="nacLugar" id="menuNac">
+                            <option value="1">Bocas del Toro</option>
+                            <option value="2">Coclé</option>
+                            <option value="3">Colón</option>
+                            <option value="4">Chiriquí</option>
+                            <option value="5">Darién</option>
+                            <option value="6">Herrera</option>
+                            <option value="7">Los Santos</option>
+                            <option value="8" selected>Panamá</option>
+                            <option value="9">Veraguas</option>
+                            <option value="10">Guna Yala</option>
+                            <option value="11">Emberá Wounaan</option>
+                            <option value="12">Ngäbe-Buglé</option>
+                            <option value="13">Panamá Oeste</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Información del Curso</legend>
+            <dl>
+                <dt>Facultad a la que pertenece:</dt>
+                <dd>
+                    <input type="radio" name="facu"><label>Facultad de Ciencias y Tecnología</label><br>
+                    <input type="radio" name="facu"><label>Facultad de Ingeniería Civil</label><br>
+                    <input type="radio" name="facu"><label>Facultad de Ingeniería Eléctrica</label><br>
+                    <input type="radio" name="facu"><label>Facultad de Ingeniería Industrial</label><br>
+                    <input type="radio" name="facu"><label>Facultad de Ingeniería Mecánica</label><br>
+                    <input type="radio" name="facu"><label>Facultad de Ingeniería de Sistemas Computacionales</label>
+                </dd>
+                <br>
+                <dt>Temas de Interés:</dt>
+                <dd>
+                    <input type="checkbox" name="inter"><label>Programación</label><br>
+                    <input type="checkbox" name="inter"><label>Diseño y Arte</label><br>
+                    <input type="checkbox" name="inter"><label>Tecnologías para conectividad en la Red</label><br>
+                    <input type="checkbox" name="inter"><label>Investigación e Innovación</label>
+                </dd>
+                <br>
+                <dt>Experiencia en Programación:</dt>   
+                <dl><textarea placeholder="Inserte Texto" cols="100" rows="5"></textarea></dl>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Información de Salud</legend>
+            
+            Peso:
+            <input type="range" min="0" max="300" step="0.01" name="rango1" oninput="salida1.value=parseFloat(rango1.value)">
+            <output name="salida1" for="range"></output> kg
+            <br>
+            Altura:
+            <input type="range" min="0.5" max="2.5" step="0.01" name="rango2" oninput="salida2.value=parseFloat(rango2.value)">
+            <output name="salida2" for="range"></output> m
+            <br>
+            <br>
+                Alergias:  <br>
+                <input type="checkbox" name="ale"><label>Rinitis</label><br>
+                <input type="checkbox" name="ale"><label>Asma</label><br>
+                <input type="checkbox" name="ale"><label>Lactosa</label><br>
+                <input type="checkbox" name="ale"><label>Medicamentos</label> <textarea placeholder="Inserte medicamentos"></textarea><br>
+                <input type="checkbox" name="ale"><label>Otro: </label> <textarea placeholder="Especificar"></textarea>
+            
+        </fieldset>
+        <div style="display: flex;">
+            <input type="submit" value="Enviar" style="margin-right: auto"> <input type="reset" value="Reiniciar">
+        </div>
+    </form>
+
+    <footer style="text-align: center;">
+        <hr>
+        <a style="font-weight: bold;" href="HOME.html"> Volver </a>
+    </footer>
+</body>

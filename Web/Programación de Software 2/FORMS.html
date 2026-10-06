@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Aprendiendo FORMULARIOS </title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form> <!-- Crea formularios -->
+        <!-- action, a donde se envia la data. 
+         target, donde mostrar las respuestas luego de responder (_blank, _self, _top, framename). 
+         method, metodo de entrega HTTP  (GET (texto plano URL), POST (body HTTP))        -->
+        <h1>Ejemplo Formulario </h1>
+        <fieldset><!-- Para agrupar elementos, SECTION -->
+        <legend>Formulario de Prueba </legend>
+        
+        <select name="options" id="menu1"> <!-- Dropdown Menu -->
+            <option value="primera">Primera Opcion</option>
+            <option value="segunda">Segunda Opcion</option>
+            <option value="tercera" selected>Tercera Opcion</option>
+        </select>
+
+        <br>
+
+        <!-- Cuadro de texto para escritura --> <!--cols ancho visible, rows filas visibles-->
+        <textarea name="areaTexto" cols="30" rows="10" placeholder="Inserte Texto"></textarea>
+
+        <br>
+
+        <button type="button" onclick="alert('Probando Boton 1')">
+            Boton 1
+        </button>
+
+        <br>
+        
+        <datalist id="listEjemplo">
+            <option value="Valor 1"></option>
+            <option value="Valor 2"></option>
+            <option value="Valor 3"></option>
+        </datalist>
+        <input list="listEjemplo" name="buscar">
+
+        <br>
+        <input type="color" style="height: 50px; width: 50px;">
+        <br>
+        <input type="file">
+        <br>
+        0 <input type="range"min="0" max="100"> 100
+
+        </fieldset>
+
+        <fieldset oninput="salida1.value=parseInt(rango1.value)">
+            <legend> Probando Output</legend>
+            <input type="range" min="0" max="100" name="rango1">
+            <output name="salida1" for="range"></output>
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="1" name="1"> <label for="1">Opcion 1</label><!-- utilizar el mismo name, cuando los queremos agrupar-->
+        <input type="checkbox" id="2" name="2"> <label for="2">Opcion 2</label>
+        <br>
+
+        <input type="radio" id="1" name="1"> <label for="1">Opcion 1</label>
+        <input type="radio" id="2" name="1"> <label for="2">Opcion 2</label>
+        <br>
+        <input type="reset" value="Reiniciar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>

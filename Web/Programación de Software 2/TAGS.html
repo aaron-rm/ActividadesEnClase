@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Para comentarios -->
+<html lang="es">          <!-- Señala el inicio de la página,   utilizamos el atributo lang para especiicar el idioma -->
+
+    <head>      <!-- Indica los metadatos de la página-->
+
+        <title> Aprendiendo TAGS </title>                               <!-- Nombre de la página, que sale en la barra -->
+        <style> body {background-color: aquamarine;} </style>         <!-- Define el estilo CSS de la página -->
+        <link>                                                          <!-- Para páginas externas -->
+        <meta>                                                          <!-- Para información general de la página-->
+        <meta charset="UTF-8">          <!-- charset, permite elegir caracteres de distintos idiomas, o incluso emojis -->
+        <meta name="description" content="Aprendiendo los TAGS básicos de HTML"> <!-- Esto ayuda a los buscadores a encontrar nuestra página -->
+        <meta name="keywords" content="html, CSS, TAGS">
+
+    </head>
+
+    <body> <!-- Contenedor principal de la información -->
+
+        <header>    <!-- Encabezado del sitio -->
+            <h1 style="text-align: center;"> <!-- Muchas etiquetas permiten utilizar atributos, cono el style, align, etc. -->
+                TAGS más conocidos </h1>   <!-- h, es para encabezados, van del h1 al h6-->
+        </header>
+
+        <div style="border: 1px solid black;"> <!-- Crea un divisor en la página-->
+            Utilizando etiquetas de bloque
+        </div>
+
+        <p> <!-- Nos permite crear párrafos-->
+            Utiliznado etiquetas de <span style="font-weight: bold;"> línea</span>  <!-- span permite modificar el texto en la misma línea-->
+        </p>
+
+        <nav> <!-- Instrucciones de navegación -->
+            <a href="https://www.youtube.com/"> <!-- a, nos permite insertar enlaces. href, es para poner la dirección, puede ser URL o de carpetas -->
+                YouTube
+            </a>
+
+            <a href="https://www.instagram.com/" target="_top" download="false"> <!-- target nos permite elegir _blank (nueva pestaña), _self (misma ventana), 
+                                                                                    _parent (marco padre), _top (ventana completa), útil al utilizar iframes -->
+                Instagram
+            </a>
+        </nav>
+
+        <section> <!-- Divide la página en secciones-->
+            Existen tambien: <br>
+            saltos de línea <hr>
+            y líneas divisoras
+        </section>
+        
+        <section>
+            <img src="https://cdn.pixabay.com/photo/2020/02/11/10/24/lake-4839058_1280.jpg" width="500" height="200">   <!-- Nos permite insertar imágenes. src para la dirección, 
+                                                                                                                        width ancho y height alto -->
+            <img src="https://png.pngtree.com/png-clipart/20230413/original/pngtree-cow-cartoon-illustration-png-image_9050067.png" width="500" height="200" 
+                        alt="imagen de una vaca" sizes="" decoding="auto">
+                <!-- alt, texto alternativo. sizes, configuracion de tamaños mínimos y máximos con CSS, decoding sync (al momento), async (en segundo plano), auto   -->
+
+            <table style="font-style: italic; font-size: large;"> <!-- Crea tablas, tambien pueden tener atributos -->
+                <caption> <h5> <span style="color: red; font-size: xx-large;"> Tabla de Ejemplo </span> </h5> </caption> <!-- Agrega título a la tabla -->
+                <tr style="text-align: center;"> <!-- Crea lineas-->
+                    <th> Elemento 1   </th> <!-- Crea headers -->
+                    <td> Elemento 2   </td> <!-- Crea Columnas -->
+                    <td> Elemento 3   </td>
+                </tr>
+                <tr style="font-size: smaller;">
+                    <td> Las columnas de la tabla,  </td>
+                    <td> Se autoajusta al tamaño </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <ol type="1"> <!-- Listas ordenadas, se puede usar type -->
+                <span style="font-weight: bold;"> Listas ordenadas </span>
+                <li> Con números </li>
+                <li type="A"> Con letras mayúsulas </li>
+                <li type="a"> Con letras minúsculas </li>
+                <li type="I"> Con números romanos en mayúsulas  </li>
+                <li type="i"> Con números romanos en minúsculas </li>
+            </ol>
+
+            <ul style="list-style-type: disc;"> <!-- Listas NO ordenadas, se usa style -->
+                <span style="font-weight: bold;"> Listas no ordenadas </span>
+                <li> Con discos </li>
+                <li style="list-style-type: circle;"> Con círculos </li>
+                <li style="list-style-type: square;"> Con cuadrados </li>
+                <li style="list-style-type: none;"> Con nada</li>
+            </ul>
+
+            <dl> <!-- Listas de descripción-->
+                <span style="font-weight: bold;"> Listas de descripción </span>
+                <dt> Vaca </dt>
+                <dd> Muu Muu Muu</dd>
+            </dl>
+        </section>
+
+        <section>
+            <audio controls> <source src="audios/vaca.mp3" type="audio/mp3"> Su explorador no puede reproducir audio </audio>
+            <video width="320" height="240" controls> <source src="videos/vaca.mp4" type="video/mp4"> Su explorador no puede reproducir video </video>
+            <iframe width="320" height="240" src="videos/vaca.mp4" allow="autoplay;" allowfullscreen> Su explorador no puede reproducir iframe </iframe>
+            <!-- iframe puede utilizar autoplay, mute, loop, controls-->
+        </section>
+
+        <footer> <!-- El "pie de página" -->
+        
+        </footer>
+    </body>
+</html>

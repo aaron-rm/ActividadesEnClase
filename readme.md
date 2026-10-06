@@ -1,35 +1,55 @@
 # Portafolio de Proyectos Académicos | UTP 🇵🇦
-## 📂 Estructura del Repositorio
-El contenido está organizado por lenguajes de programación y áreas de estudio:
 
-### 🔵 C++
-* **Análisis y Diseño de Algoritmos:** Documentación y soluciones de laboratorios (ej. Lab 3).
-* **Principios de Programación:** Recopilación de laboratorios (1, 2, 3), parciales y el proyecto semestral.
+Recopilación de laboratorios, prácticas, parciales y proyectos desarrollados durante mi formación en Ingeniería de Software en la Universidad Tecnológica de Panamá. El contenido reúne ejercicios de programación, algoritmos, estructuras de datos, diseño de software, métodos numéricos y desarrollo web.
 
-### ☕ Java
-* **Análisis y Diseño de Algoritmos:** Resolución de problemas lógicos y estructuras de control (Laboratorios 4 y 5).
-* **Arquitectura y Diseño de Software:** Actividades de modelado y diseño de sistemas.
-* **Estructura y Representación de Datos:** Proyectos de gestión de información (ej. Proyecto IGRD).
-* **Programación de Software II:** Una sección extensa que incluye desde laboratorios semanales (1 al 8), prácticas de parciales, hasta el uso de Git e interfaces gráficas.
+## 📂 Organización del repositorio
 
-### 🐍 Python
-* **Análisis y Diseño de Algoritmos:** Contiene el examen Parcial 2 y el **Proyecto Final** con su respectiva documentación en PDF.
+Los trabajos se organizan por **lenguaje o tecnología → asignatura → actividad**. Cada actividad conserva sus fuentes, recursos y documentación. Los proyectos web mantienen juntos HTML, CSS, JSP y configuración de Eclipse; el ensamblador educativo conserva sus scripts Python, archivos ASM y ROM en una misma carpeta.
 
-### 🌐 Web (Programación de Software)
-* **Asignación 2:** Desarrollo de un sitio web completo con secciones de Home, Contacto, Registro y Blog.
-* **Práctica 1:** Ejercicios iniciales de maquetación HTML y manejo de recursos multimedia.
+| Área | Asignaturas y contenido |
+| --- | --- |
+| [🔵 C y C++](C%2B%2B/readme.md) | Análisis y Diseño de Algoritmos; Principios de Programación. Laboratorios, parcial y semestral. |
+| [☕ Java](Java/readme.md) | Análisis y Diseño de Algoritmos; Arquitectura y Diseño de Software; Estructura y Representación de Datos; Programación de Software 1. |
+| [🐍 Python](Python/readme.md) | Análisis y Diseño de Algoritmos; Métodos Numéricos; Organización y Arquitectura de Computadoras. |
+| [🌐 Web](Web/readme.md) | Programación de Software 2: HTML, formularios, Flexbox y aplicaciones JSP con MySQL. |
 
-## 🛠️ Competencias Técnicas
-* **Lenguajes:** Java, HTML, Python, C++, C.
-* **Lógica:** Diseño de algoritmos, manejo de arreglos de registros y validación de entradas.
-* **Arquitectura:** Modelado de relaciones entre clases (agregación, composición y dependencia).
-* **Conceptos:** Algoritmos, Estructuras de Datos, POO, Desarrollo Web, Control de Versiones (Git).
+## 🚀 Proyectos destacados
 
+- [SpeedLab](Java/Programaci%C3%B3n%20de%20Software%201/Proyecto%20Final/readme.md): aplicación Java Swing para cuentas, catálogo, carrito de compras y citas de servicios.
+- [Biblioteca y análisis de algoritmos](Python/An%C3%A1lisis%20y%20Dise%C3%B1o%20de%20Algor%C3%ADtmos/Proyecto%20Final/readme.md): catálogo gráfico, búsquedas, ordenamiento y mediciones de tiempo y memoria.
+- [Tic-Tac-Toe 3D](Python/Organizaci%C3%B3n%20y%20Arquitectura%20de%20Computadoras/Semestral/README.md): tablero 4×4×4, bot, partidas en red y chat.
+- [Ensamblador educativo](Python/Organizaci%C3%B3n%20y%20Arquitectura%20de%20Computadoras/Proyecto%204/readme.md): procesamiento de etiquetas y traducción de instrucciones a una ROM hexadecimal.
+- [Teoría de error](Python/M%C3%A9todos%20Num%C3%A9ricos/readme.md): aproximaciones de Taylor y soluciones iterativas con Jacobi y Gauss-Seidel.
+- [Universidad del Pueblo](Web/Programaci%C3%B3n%20de%20Software%202/Taller4%20Remarchuk/readme.md): registro de estudiantes y profesores, calendario y persistencia MySQL.
+
+## 🛠️ Cómo utilizar los trabajos
+
+Cada carpeta es una entrega independiente y tiene sus propios requisitos. Consulta el README de la asignatura o del proyecto antes de ejecutarlo.
+
+| Tecnología | Entorno utilizado por los archivos |
+| --- | --- |
+| C / C++ | Compilador de C o C++; los programas se compilan individualmente. |
+| Java | JDK; los formularios `.form` corresponden al diseñador de interfaces de IntelliJ IDEA. |
+| Python | Python 3; NumPy, Matplotlib o Plotly según el proyecto; Tkinter para interfaces gráficas. |
+| HTML / CSS | Navegador web para las prácticas estáticas. |
+| JSP / JDBC | Eclipse con soporte web, JDK configurado por proyecto, Tomcat 9 y MySQL. |
+
+Las clases `Main`, `Empleado` o `Problema1` se repiten entre entregas: compila cada actividad por separado. No hay una compilación única para todo el portafolio.
+
+## 📚 Competencias trabajadas
+
+- Estructuras de control, arreglos, matrices y validación de entradas.
+- Programación orientada a objetos, excepciones y relaciones entre clases.
+- Búsqueda, ordenamiento y análisis empírico de complejidad.
+- Interfaces de escritorio, maquetación web, formularios y acceso a bases de datos.
+- Comunicación con sockets TCP, descubrimiento UDP y traducción de instrucciones.
+- Aproximaciones numéricas, truncamiento y cálculo de error.
 
 ## 🏛️ Institución
-* **Universidad:** Universidad Tecnológica de Panamá (UTP)
-* **Facultad:** Ingeniería de Sistemas Computacionales
-* **Periodo Académico:** 2024-...
 
----
-*Este repositorio es un reflejo de mi aprendizaje continuo en el área de desarrollo de software y ciencias de la computación.*
+- **Universidad:** Universidad Tecnológica de Panamá (UTP).
+- **Facultad:** Ingeniería de Sistemas Computacionales.
+- **Carrera:** Ingeniería de Software.
+- **Periodo académico:** trabajos desde 2024, con proyectos de 2025 y 2026.
+
+Los trabajos procedentes de `TrabajosEnClase` se incorporan dentro de esta misma organización. Los README describen los archivos disponibles; los enunciados PDF y documentos originales se conservan junto a sus actividades. Las cachés de Python se excluyen del seguimiento mediante `.gitignore`.
